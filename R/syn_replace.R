@@ -19,7 +19,7 @@
 
 syn_replace <- function(df, data, tag){
   data[[tag]] <- gsub(
-    ';_', replacement = '; ',
+    ';_+', replacement = '; ',
     x= gsub('^_', replacement = ' ',
             x= gsub('\\s', replacement = '_',
                     x= gsub('-', replacement = '_-_', data[[tag]]
