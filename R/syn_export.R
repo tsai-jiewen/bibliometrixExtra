@@ -5,14 +5,20 @@
 #' @description
 #' @details
 #' @param file a file name as the export file. (notice: add th subtitle .csv)
-#' @param data a dataset
-#' @param tag
+#' @param data a dataset he biblio data
+#' @param tag the field tag
 #'
 #' @return a csv file
 #' @export
 #'
 #' @examples
-#' syn_export(scientometrics, tag='ID', 'test1127.csv')
+#'
+#' data(scientometrics, package = "bibliometrixData")
+#' syn_export(
+#' file = 'test1124.csv'   # export file name
+#' data = scientometrics,  # the biblio data
+#' tag = 'ID',             # the field tag
+#' )
 #'
 
 syn_export <- function(data, tag = "", file = "") {

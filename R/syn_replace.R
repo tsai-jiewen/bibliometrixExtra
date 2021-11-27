@@ -4,8 +4,8 @@
 #' @description
 #' @details
 #'
-#' @param df a dataframe includes synonyms and replaced terms
-#' @param data a dataset
+#' @param df the edited file you import which includes synonyms and replaced terms
+#' @param data a dataset the original biblio data
 #' @param tag a field-tag, i.g. 'ID' or 'DE'.
 #'
 #' @return a dataframe
@@ -13,9 +13,11 @@
 #'
 #' @examples
 #' data(scientometrics, package = "bibliometrixData")
-#' scientometrics$ID <- syn_replace( df = DTF,
-#' data = scientometrics,
-#' tag = 'ID')
+#' scientometrics$ID <- syn_replace(
+#'   df = DTF,               # the edited file you import
+#'   data = scientometrics,  # the original biblio data
+#'   tag = 'ID'              # the field tag
+#' )
 
 syn_replace <- function(df, data, tag){
   data[[tag]] <- gsub(
