@@ -9,7 +9,7 @@ JW
 ## ★ Usage
 
 ```r=
-devtools::install_github('tsai-jiewen/bibliometrixExtra')
+remotes::install_github('tsai-jiewen/bibliometrixExtra')
 library(bibliometrixExtra) # syn_export(), syn_replace()
 library(bibliometrix)
 library(tidyverse)
