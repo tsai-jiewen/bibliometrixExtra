@@ -1,5 +1,5 @@
 #'
-#' @title replace synonyms by importing csv file
+#' @title Replace synonyms by importing a csv file.
 #'
 #' @description
 #' @details

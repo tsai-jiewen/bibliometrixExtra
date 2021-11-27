@@ -2,7 +2,7 @@
 % Please edit documentation in R/syn_replace.R
 \name{syn_replace}
 \alias{syn_replace}
-\title{replace synonyms by importing csv file}
+\title{Replace synonyms by importing a csv file.}
 \usage{
 syn_replace(df, data, tag)
 }
@@ -17,7 +17,7 @@ syn_replace(df, data, tag)
 a dataframe
 }
 \description{
-replace synonyms by importing csv file
+Replace synonyms by importing a csv file.
 }
 \details{
 
