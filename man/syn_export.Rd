@@ -7,9 +7,9 @@
 syn_export(data, tag = "", file = "")
 }
 \arguments{
-\item{data}{a dataset}
+\item{data}{a dataset he biblio data}
 
-\item{tag}{}
+\item{tag}{the field tag}
 
 \item{file}{a file name as the export file. (notice: add th subtitle .csv)}
 }
@@ -20,6 +20,12 @@ a csv file
 Export a csv file to edit the synonyms table.
 }
 \examples{
-syn_export(scientometrics, tag='ID', 'test1127.csv')
+
+data(scientometrics, package = "bibliometrixData")
+syn_export(
+file = 'test1124.csv'   # export file name
+data = scientometrics,  # the biblio data
+tag = 'ID',             # the field tag
+)
 
 }

@@ -7,9 +7,9 @@
 syn_replace(df, data, tag)
 }
 \arguments{
-\item{df}{a dataframe includes synonyms and replaced terms}
+\item{df}{the edited file you import which includes synonyms and replaced terms}
 
-\item{data}{a dataset}
+\item{data}{a dataset the original biblio data}
 
 \item{tag}{a field-tag, i.g. 'ID' or 'DE'.}
 }
@@ -24,7 +24,9 @@ Replace synonyms by importing a csv file.
 }
 \examples{
 data(scientometrics, package = "bibliometrixData")
-scientometrics$ID <- syn_replace( df = DTF,
-data = scientometrics,
-tag = 'ID')
+scientometrics$ID <- syn_replace(
+  df = DTF,               # the edited file you import
+  data = scientometrics,  # the original biblio data
+  tag = 'ID'              # the field tag
+)
 }
