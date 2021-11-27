@@ -16,7 +16,7 @@ library(tidyverse)
 ```
 
 ### 1. Using `syn_export()` to export csv from `bibliometrix`.
-(from the customed package `bibliometrxEtra` )
+(from the customed package `bibliometrixExtra` )
 
 ```r=
 data(scientometrics, package = "bibliometrixData")
@@ -53,7 +53,7 @@ check
 ```
 
 ### 3. Using `syn_replace()` to replace the original synonyms terms. 
-(from the customed package `bibliometrxEtra` )
+(from the customed package `bibliometrixExtra` )
 
 take 'ID' for example.
 you can change to 'DE', etc, but remember keep the `$ID` and `tag='ID'` as the same.
