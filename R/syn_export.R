@@ -15,9 +15,9 @@
 #'
 #' data(scientometrics, package = "bibliometrixData")
 #' syn_export(
-#' file = 'test1124.csv'   # export file name
-#' data = scientometrics,  # the biblio data
-#' tag = 'ID',             # the field tag
+#' file = 'test1124.csv',   # export file name
+#' data = scientometrics,   # the biblio data
+#' tag = 'ID'               # the field tag
 #' )
 #'
 
